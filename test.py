@@ -16,3 +16,10 @@ def test_newline_delimiter():
 
 def test_custom_delimiter():
     assert add("//;\n1;2") == 3
+
+def test_negative_numbers():
+    with pytest.raises(ValueError):
+        add("1,-2")
+
+def test_ignore_numbers_greater_than_1000():
+    assert add("1001,2") == 2

@@ -16,5 +16,9 @@ def add(numbers):
     result = 0
     for number in numbers:
         if number:
-            result += int(number)
+            num = int(number)
+            if num < 0:
+                raise ValueError("Negatives not allowed")
+            if num <= 1000:
+                result += num
     return result
