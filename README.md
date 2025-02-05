@@ -15,6 +15,5 @@ Implement a String Calculator that can sum numbers from a string with various de
     source venv/bin/activate
     ```
 3. Run `pip install -r requirements.txt` to install the required packages.
-4. Run pytest to run the tests.
-    ```pytest test.py```
-
+4. Run pytest to run the tests `pytest test.py`. Below result should appear in the CLI.
+![Test Screenshot](testresult.png)
